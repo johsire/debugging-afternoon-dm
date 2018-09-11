@@ -21,14 +21,15 @@ class StoreFront extends Component {
                     <button onClick={() => this.props.addToShoppingCart(element)}>Purchase!</button>
                 </div>
             )
-        })
+        });
+
         return (
             <div className="storefront-container">
                 {productDisplay}
             </div>
         )
     }
-}
+};
 
 function mapStateToProps(state) {
     return {
